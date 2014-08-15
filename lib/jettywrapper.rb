@@ -41,11 +41,11 @@ class Jettywrapper
     attr_writer :hydra_jetty_version, :url, :tmp_dir, :jetty_dir, :env
 
     def hydra_jetty_version
-      @hydra_jetty_version ||= 'v7.0.0'
+      @hydra_jetty_version ||= 'v3.8.0-RC1'
     end
 
     def url
-      @url ||= defined?(ZIP_URL) ? ZIP_URL : "https://github.com/projecthydra/hydra-jetty/archive/#{hydra_jetty_version}.zip"
+      @url ||= defined?(ZIP_URL) ? ZIP_URL : "https://github.com/barmintor/hydra-jetty/archive/#{hydra_jetty_version}.zip"
       @url
     end
 
